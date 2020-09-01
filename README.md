@@ -6,19 +6,17 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+	ruby-2.6.3
 
 * System dependencies
-
-* Configuration
+	rails-6.0
+	carierwave-rails
 
 * Database creation
+	postgresql
 
-* Database initialization
+* Configuration
+	`bundle install` then create db `rake db:create` afterwards migrate all files `rake db:migrate`.
+* Run Server
+	`rails s`, also for checking db console `rails c`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
