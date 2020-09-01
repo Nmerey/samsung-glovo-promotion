@@ -1,0 +1,76 @@
+#banner {
+	width: 100vw;
+	height: 70vh;
+	background-image: url('samsung_delivers-1440');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 1020px) {
+	#banner {
+		width: 100vw;
+		height: 70vh;
+		background-image: url('samsung_delivers-720');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+	}
+}
+
+.bg-grey {
+	background-color: lightgrey;
+}
+.text-black {
+	color: black;
+}
+.models-table {
+	width: 50vw;
+}
+
+.registration-form {
+	width: 40vw;
+}
+
+.regulation-title {
+	font-family: SamsungSharpSans;
+	font-size: 2rem;
+	margin-top: 5rem;
+}
+
+.font-one {
+	font-family: SamsungOne;
+}
+
+.font-700 {
+	font-family: SamsungOne700;
+}
+
+.small-title {
+	font-family: SamsungOne;
+	font-size: 1.5rem;
+}
+
+.small-title-bold {
+	font-family: SamsungOne700;
+	font-size: 1.5rem;
+}
+
+.banner-title {
+	font-family: SamsungSharpSans;
+	font-size: 3.5rem;	
+}
+
+.btn-round {
+	border-radius: 1.5rem;
+	font-family: SamsungOne700;
+}
+
+.btn-about {
+	text-decoration: underline;
+	font-size: 0.7rem;
+}
+
+.dots {
+	font-size: 7rem;
+}

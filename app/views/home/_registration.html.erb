@@ -1,0 +1,66 @@
+<div class="registration d-flex flex-column align-items-center">
+	<div class="regulation-title">Регистрация</div>
+	<div class="small-title mt-3 mb-5">Заполни форму ниже и участвуй в розыгрыше призов</div>
+	<div class="registration-form pt-5">
+		<%= form_for @cheque, html: {class: "border p-5"} do |f| %>
+
+		<div class="form-row text-left">
+			<div class="col mb-3">
+				<label for="validationDefault01">ФИО</label>
+				<%= f.text_field :fullname, class: "form-control", required: true %>
+			</div>
+		</div>
+		<div class="form-row text-left">
+			<div class="col mb-3">
+				<label for="validationDefault01">Город</label>
+				<%= f.text_field :city, class: "form-control", required: true %>
+			</div>
+		</div>
+		<div class="form-row text-left">
+			<div class="col mb-3">
+				<label for="validationDefault01">Номер телефона</label>
+				<%= f.text_field :phone, class: "form-control", required: true %>
+			</div>
+			<div class="col mb-3">
+				<label for="validationDefault01">Email</label>
+				<%= f.text_field :email, class: "form-control", required: true %>
+			</div>
+		</div>
+		<div class="form-row text-left">
+			<div class="col mb-3">
+				<label for="validationDefault01">Партнер</label>
+				<%= f.text_field :partner, class: "form-control", required: true %>
+			</div>
+			<div class="col mb-3">
+				<label for="validationDefault01">Устройство</label>
+				<%= f.text_field :device, class: "form-control", required: true %>
+			</div>
+		</div>
+		<div class="form-row text-left">
+			<div class="col mb-3">
+				<label for="validationDefault01">Дата Покупки</label>
+				<%= f.text_field :buy_date, class: "form-control", required: true %>
+			</div>
+		</div>
+		<div class="form-row text-left">
+			<div class="custom-file">
+				<%= f.file_field :cheque_image, class: "custom-file-input", required: true %>
+				<label class="custom-file-label" for="customFileLang">Загрузите фото чека</label>
+			</div>
+		</div>
+		<p class="font-one text-left text-muted">Размер фото не должно привышать 5мб</p>
+		<div class="form-group text-left">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" required>
+				<label class="form-check-label" >
+					Я ознакомлен и принимаю <a class="text-dark" href=""><u>условия передачи песональных данных</u></a>
+				</label>
+				<div class="invalid-feedback">
+					You must agree before submitting.
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-outline-dark btn-round px-5 pt-2 text-uppercase text-center" type="submit">Отправить Данные</button>
+		<% end -%>
+	</div>
+</div>

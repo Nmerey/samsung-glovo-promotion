@@ -1,0 +1,23 @@
+.samsung-icon {
+	width: 7vw;
+	height: 7vh;
+}
+
+a {
+	font-family: samsungSharpSans;
+	font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 1020px) {
+	.samsung-icon { 
+		width: 13vw;
+		height: 9vh; 
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.row .col-2 .nav-item .samsung-icon { 
+		width: 14vw;
+		height: 4vh; 
+	}
+}
